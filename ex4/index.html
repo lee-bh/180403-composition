@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>더 랍스터</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<!-- 어도비 본명조 -->
+	<script src="https://use.typekit.net/fdv0sur.js"></script>
+	<style>
+	
+		.wrap{ width:1920px; margin:auto; position: relative}
+		.beige{ background: #efede1 }
+		
+		#back1{ background: url('./img/back1.jpg'); background-size:100% auto; height:2162px;}
+		#back2{ background: url('./img/back2.jpg'); background-size:100% auto; height:3153px;}
+		#back3{ background: url('./img/back3.jpg'); background-size:100% auto; height:1039px;}
+		#back4{ background: url('./img/back4.jpg'); background-size:100% auto; height:3022px;}
+		#back5{ background: url('./img/back5.jpg'); background-size:100% auto; height:1917px;}
+		#back6{ background: url('./img/back6.jpg'); background-size:100% auto; height:397px;}
+
+
+		/*아래 여러가지 속성들 중에서 반복적으로 사용되는 속성은 따로 뺍니다*/
+		h3{ font-size:2em; position: absolute; line-height: 1.58; text-decoration: underline; font-weight: bold}
+		p{ font-size:2em; position: absolute; line-height: 1.58; }
+
+
+		/*이렇게 쓰는 것이 더 좋습니다(고급)*/
+		p,h3{ font-size:2em; position: absolute; line-height: 1.58; }		
+		h3{ text-decoration: underline; font-weight: bold }
+
+
+		/*반복되는 속성을 지정했으면 이제부터는 위치만 지정하면 됩니다.*/
+
+		/*header*/
+		header h3{top:1440px;left:715px;}
+		header p{top:1490px;left:715px;}
+
+		/*contents1*/
+		#contents1 h3{width:350px; background: red}
+		#contents1 p{width:350px; background: yellow}
+		#contents1 #h1{ top:960px; left:730px; }
+		#contents1 #p1{ top:1030px; left:730px; }
+		#contents1 #h2{ top:960px; left:1200px; }
+		#contents1 #p2{ top:1030px; left:1200px; }
+		
+	</style>
+</head>
+<body>
+	<header class="beige">
+		<div class="wrap" id="back1">
+			<h2>사람과 사랑에 관한 독특한 상상력</h2>
+			<!--h1태그는 전체 페이지에서 단 한번만 나와야 합니다.-->
+			<h1>The Lobster</h1>
+			<p class="small"></p>
+			<h3>사랑하지 않는 자, 모두 유죄</h3>
+			<p>언뜻 보면 멜로 영화 포스터에 대문짝만하게 붙어 있을 법한 문구이다.<br>그러나 영화에서는 이게 현실이다.<br><br>영화 &lt;더 랍스터&gt;의 배경은 무조건적으로 누군가를 사랑해야만 하는 가까운 미래이다.<br>사랑하지 못하고 혼자가 된다면 방법은 하나 뿐.<br>짝을 찾기 위한 호텔로 끌려간다. 이 호텔에는 짝이 없어 혼자인 사람들이 모여 있다.<br>그들에겐 총 45일간의 시간이 주어진다.<br>그 시간 안에 자신의 짝을 찾는다면 아무 문제가 없지만, 문제는 짝을 찾지 못했을 때이다.<br>45일 후에도 홀로 남겨진 사람들은 동물로 변해 살아가야만 한다.</p>
+		</div>
+	</header>
+	<section id="contents1">
+		<div class="wrap" id="back2">
+			<h3 id="h1">이성애자 혹은 동성애자</h3>
+			<p id="p1">주인공 데이비드가 처음 호텔에 들어와 본인의 신상정보를 작성하던 중 성적 정체성에 관한 질문을 받는다</p>
+			<h3 id="h2">44반은 없어요</h3>
+			<p id="p2">호텔에서는 개인 소지품을 소지할 수 없는 대신 대부분의 생필품을 제공해준다. 좋은 호텔이다.</p>
+		</div>
+	</section>
+	<section id="contents2">
+		<div class="wrap" id="back3">
+			
+		</div>
+	</section id="contents3">
+	<section class="beige">
+		<div class="wrap" id="back4">
+			
+		</div>
+	</section>
+	<section id="contents4">
+		<div class="wrap" id="back5">
+			
+		</div>
+	</section>
+	<footer>
+		<div class="wrap" id="back6">
+			
+		</div>
+	</footer>
+</body>
+</html>
